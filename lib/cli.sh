@@ -4,8 +4,8 @@
 # Function: p6df::modules::cloudflare::warp::cli(cmd, ...)
 #
 #  Args:
-#	cmd - warp-cli command
-#	... - additional arguments
+#	cmd -
+#	... - 
 #
 #>
 ######################################################################
