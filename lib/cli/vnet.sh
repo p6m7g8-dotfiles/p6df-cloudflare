@@ -3,9 +3,6 @@
 #
 # Function: p6df::modules::cloudflare::warp::vnet::list()
 #
-#  Synopsis:
-#	List all available virtual networks
-#
 #>
 ######################################################################
 p6df::modules::cloudflare::warp::vnet::list() {
@@ -19,9 +16,6 @@ p6df::modules::cloudflare::warp::vnet::list() {
 #<
 #
 # Function: p6df::modules::cloudflare::warp::vnet::current()
-#
-#  Synopsis:
-#	Show currently selected virtual network
 #
 #>
 ######################################################################
@@ -38,13 +32,10 @@ p6df::modules::cloudflare::warp::vnet::current() {
 # Function: str vnet_id = p6df::modules::cloudflare::warp::vnet::_name_to_id(name)
 #
 #  Args:
-#	name - Virtual network name (e.g., dev, stage, prod)
+#	name -
 #
 #  Returns:
 #	str - vnet_id
-#
-#  Synopsis:
-#	Internal helper to map vnet name to ID
 #
 #>
 ######################################################################
@@ -66,10 +57,7 @@ p6df::modules::cloudflare::warp::vnet::_name_to_id() {
 # Function: p6df::modules::cloudflare::warp::vnet::set(vnet)
 #
 #  Args:
-#	vnet - Virtual network name (e.g., dev, stage, prod)
-#
-#  Synopsis:
-#	Switch to specified virtual network by name
+#	vnet -
 #
 #>
 ######################################################################

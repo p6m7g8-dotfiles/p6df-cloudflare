@@ -1,10 +1,7 @@
 ######################################################################
 #<
 #
-# Function: p6df::modules::cloudflare::warp::connect()
-#
-#  Synopsis:
-#	Maintain a connection whenever possible
+# Function: p6df::modules::cloudflare::warp::status::connect()
 #
 #>
 ######################################################################
@@ -18,10 +15,7 @@ p6df::modules::cloudflare::warp::status::connect() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::cloudflare::warp::disconnect()
-#
-#  Synopsis:
-#	Disconnect the client
+# Function: p6df::modules::cloudflare::warp::status::disconnect()
 #
 #>
 ######################################################################
@@ -35,10 +29,7 @@ p6df::modules::cloudflare::warp::status::disconnect() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::cloudflare::warp::status()
-#
-#  Synopsis:
-#	Return the current connection status
+# Function: p6df::modules::cloudflare::warp::status::show()
 #
 #>
 ######################################################################

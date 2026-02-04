@@ -31,21 +31,58 @@ TODO: Add a short summary of this module.
 
 ### Functions
 
+#### cli
+
+##### p6df-cloudflare/lib/cli/status.sh
+
+- `p6df::modules::cloudflare::warp::status::connect()`
+- `p6df::modules::cloudflare::warp::status::disconnect()`
+- `p6df::modules::cloudflare::warp::status::show()`
+
+##### p6df-cloudflare/lib/cli/vnet.sh
+
+- `p6df::modules::cloudflare::warp::vnet::current()`
+- `p6df::modules::cloudflare::warp::vnet::list()`
+- `p6df::modules::cloudflare::warp::vnet::set(vnet)`
+  - Args:
+    - vnet - 
+- `str vnet_id = p6df::modules::cloudflare::warp::vnet::_name_to_id(name)`
+  - Args:
+    - name - 
+
 #### p6df-cloudflare
 
 ##### p6df-cloudflare/init.zsh
 
 - `p6df::modules::cloudflare::deps()`
 - `p6df::modules::cloudflare::external::brew()`
+- `p6df::modules::cloudflare::init(_module, dir)`
+  - Args:
+    - _module - 
+    - dir - 
+
+#### p6df-cloudflare/lib
+
+##### p6df-cloudflare/lib/cli.sh
+
+- `p6df::modules::cloudflare::warp::cli(cmd, ...)`
+  - Args:
+    - cmd - 
+    - ... - 
 
 ## Hierarchy
 
 ```text
 .
 ├── init.zsh
+├── lib
+│   ├── cli
+│   │   ├── status.sh
+│   │   └── vnet.sh
+│   └── cli.sh
 └── README.md
 
-1 directory, 2 files
+3 directories, 5 files
 ```
 
 ## Author
