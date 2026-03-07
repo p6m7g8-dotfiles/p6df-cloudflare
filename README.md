@@ -17,7 +17,9 @@
 
 ## Summary
 
-TODO: Add a short summary of this module.
+p6df module for Cloudflare: WARP CLI tools (`cloudflare-warp`), virtual network
+management helpers, and MCP server (`@cloudflare/mcp-server-cloudflare`) for
+AI-driven Cloudflare Workers, KV, R2, D1, and zone management.
 
 ## Contributing
 
@@ -45,10 +47,10 @@ TODO: Add a short summary of this module.
 - `p6df::modules::cloudflare::warp::vnet::list()`
 - `p6df::modules::cloudflare::warp::vnet::set(vnet)`
   - Args:
-    - vnet - 
+    - vnet
 - `str vnet_id = p6df::modules::cloudflare::warp::vnet::_name_to_id(name)`
   - Args:
-    - name - 
+    - name
 
 #### p6df-cloudflare
 
@@ -58,8 +60,9 @@ TODO: Add a short summary of this module.
 - `p6df::modules::cloudflare::external::brew()`
 - `p6df::modules::cloudflare::init(_module, dir)`
   - Args:
-    - _module - 
-    - dir - 
+    - _module
+    - dir
+- `p6df::modules::cloudflare::mcp()`
 
 #### p6df-cloudflare/lib
 
@@ -67,8 +70,8 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::cloudflare::warp::cli(cmd, ...)`
   - Args:
-    - cmd - 
-    - ... - 
+    - cmd
+    - ...
 
 ## Hierarchy
 
