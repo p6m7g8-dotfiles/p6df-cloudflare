@@ -45,3 +45,17 @@ p6df::modules::cloudflare::init() {
 
   p6_return_void
 }
+
+######################################################################
+#<
+#
+# Function: p6df::modules::cloudflare::mcp()
+#
+#>
+######################################################################
+p6df::modules::cloudflare::mcp() {
+
+  p6_js_npm_global_install "@cloudflare/mcp-server-cloudflare"
+
+  p6_return_void
+}
