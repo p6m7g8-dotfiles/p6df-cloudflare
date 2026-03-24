@@ -22,7 +22,7 @@ p6df::modules::cloudflare::warp::vnet::list() {
 ######################################################################
 p6df::modules::cloudflare::warp::vnet::current() {
 
-  p6df::modules::cloudflare::warp::cli "warp-cli vnet | head -1"
+  p6df::modules::cloudflare::warp::cli "warp-cli vnet | p6_filter_row_first 1"
 
   p6_return_void
 }
