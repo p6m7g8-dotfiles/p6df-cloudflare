@@ -57,5 +57,8 @@ p6df::modules::cloudflare::mcp() {
 
   p6_js_npm_global_install "@cloudflare/mcp-server-cloudflare"
 
+  p6df::modules::anthropic::mcp::server::add "cloudflare" "npx" "-y" "@cloudflare/mcp-server-cloudflare"
+  p6df::modules::openai::mcp::server::add "cloudflare" "npx" "-y" "@cloudflare/mcp-server-cloudflare"
+
   p6_return_void
 }
