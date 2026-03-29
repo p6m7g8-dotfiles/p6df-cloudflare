@@ -15,11 +15,11 @@ p6df::modules::cloudflare::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::cloudflare::external::brew()
+# Function: p6df::modules::cloudflare::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::cloudflare::external::brew() {
+p6df::modules::cloudflare::external::brews() {
 
   p6df::core::homebrew::cli::brew::install cloudflare-warp --cask
 
