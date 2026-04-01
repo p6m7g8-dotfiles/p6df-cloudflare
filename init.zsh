@@ -29,26 +29,6 @@ p6df::modules::cloudflare::external::brews() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::cloudflare::init(_module, dir)
-#
-#  Args:
-#	_module -
-#	dir -
-#
-#>
-######################################################################
-p6df::modules::cloudflare::init() {
-  local _module="$1"
-  local dir="$2"
-
-  p6_bootstrap "$dir"
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
 # Function: p6df::modules::cloudflare::mcp()
 #
 #>
@@ -61,4 +41,20 @@ p6df::modules::cloudflare::mcp() {
   p6df::modules::openai::mcp::server::add "cloudflare" "npx" "-y" "@cloudflare/mcp-server-cloudflare"
 
   p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: words cloudflare $CLOUDFLARE_API_TOKEN = p6df::modules::cloudflare::profile::mod()
+#
+#  Returns:
+#	words - cloudflare $CLOUDFLARE_API_TOKEN
+#
+#  Environment:	 CLOUDFLARE_API_TOKEN
+#>
+######################################################################
+p6df::modules::cloudflare::profile::mod() {
+
+  p6_return_words 'cloudflare' "$CLOUDFLARE_API_TOKEN"
 }
