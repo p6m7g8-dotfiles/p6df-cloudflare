@@ -56,5 +56,5 @@ p6df::modules::cloudflare::mcp() {
 ######################################################################
 p6df::modules::cloudflare::profile::mod() {
 
-  p6_return_words 'cloudflare' "$CLOUDFLARE_API_TOKEN"
+  p6_return_words 'cloudflare' '$CLOUDFLARE_API_TOKEN'
 }
