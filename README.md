@@ -17,9 +17,7 @@
 
 ## Summary
 
-p6df module for Cloudflare: WARP CLI tools (`cloudflare-warp`), virtual network
-management helpers, and MCP server (`@cloudflare/mcp-server-cloudflare`) for
-AI-driven Cloudflare Workers, KV, R2, D1, and zone management.
+TODO: Add a short summary of this module.
 
 ## Contributing
 
@@ -57,12 +55,9 @@ AI-driven Cloudflare Workers, KV, R2, D1, and zone management.
 ##### p6df-cloudflare/init.zsh
 
 - `p6df::modules::cloudflare::deps()`
-- `p6df::modules::cloudflare::external::brew()`
-- `p6df::modules::cloudflare::init(_module, dir)`
-  - Args:
-    - _module
-    - dir
+- `p6df::modules::cloudflare::external::brews()`
 - `p6df::modules::cloudflare::mcp()`
+- `words cloudflare = p6df::modules::cloudflare::profile::mod()`
 
 #### p6df-cloudflare/lib
 
