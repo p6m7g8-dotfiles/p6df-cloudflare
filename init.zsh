@@ -46,10 +46,10 @@ p6df::modules::cloudflare::mcp() {
 ######################################################################
 #<
 #
-# Function: words cloudflare $CLOUDFLARE_API_TOKEN = p6df::modules::cloudflare::profile::mod()
+# Function: words cloudflare = p6df::modules::cloudflare::profile::mod()
 #
 #  Returns:
-#	words - cloudflare $CLOUDFLARE_API_TOKEN
+#	words - cloudflare
 #
 #  Environment:	 CLOUDFLARE_API_TOKEN
 #>
